@@ -4,7 +4,8 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { Favorites, Home, Menu, Order, Paiement, Profile } from "../screens";
+import { Favorites, Home, Paiement, Profile } from "../screens";
+import OrderNav from "./OrderNav";
 
 const Tab = createBottomTabNavigator();
 
@@ -30,8 +31,8 @@ const BottomTab = () => {
       />
 
       <Tab.Screen
-        name="Orders"
-        component={Menu}
+        name="Ordering"
+        component={OrderNav}
         options={{
           tabBarLabel: "Orders",
           tabBarIcon: ({ color, size }) => (

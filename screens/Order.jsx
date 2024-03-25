@@ -44,7 +44,7 @@ let orders = [
   },
 ];
 
-const Order = () => {
+const Order = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.logo}>
@@ -56,7 +56,7 @@ const Order = () => {
         icon="plus"
         color="white"
         style={styles.fab}
-        onPress={() => console.log("Pressed")}
+        onPress={() => navigation.navigate("Menu")}
       />
     </SafeAreaView>
   );
